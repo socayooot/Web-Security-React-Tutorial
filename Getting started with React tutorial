@@ -1,0 +1,58 @@
+//Here is the bare minimum for using react:
+//first challenge
+
+//first need to import react-dom
+import {createRoot } from "react-dom/client"
+//specifiy some root
+const root = createRoot(document.getElementById("root")) //can also use document.querySelector("#root")
+//render it
+root.render(<p>Hello, React!</p>)
+
+// ------------------------------------------------------------------------------------------------------ //
+//to do this lesson, you must first 
+//1: Have some HTML file: This is the example given in the Scrimba tutorial
+//<html>
+//    <head>
+//      <link rel="stylesheet" href="/index.css">
+//    </head>
+//  <body>
+//     <div id="root"></div>
+//    <script src="/index.jsx" type="module"></script>
+// </body>
+// </html>
+//2: Have some css file:
+//body {
+//  font-family: Arial, Helvetica, sans-serif;
+//  background: #27292c;
+//  color: white;
+//  text-align: center;
+//  }
+//
+//  h1 {
+//  margin-top: 40px;
+//  }
+//3:: have some .jsx file
+//this is the code above
+// ------------------------------------------------------------------------------------------------------ //
+
+
+// ------------------------------------------------------------------------------------------------------ //
+//Here is the second challenge provided
+//* Challenge: Set up a React app from scratch again.
+//* This time, try rendering an unordered list with 2-3 list items inside
+//* with why you're excited to be learning React.
+//Here is my answer:
+
+import { createRoot } from "react-dom/client"
+
+const root = createRoot(document.getElementById("root"))
+root.render(
+    <ul>
+        <li> Super popular JS framework </li>   
+        <li> It would be good to know before heading into indsutry </li>
+        <li> I have to do this to complete my homework assignment </li>
+    </ul>
+)
+
+
+// ------------------------------------------------------------------------------------------------------ //
